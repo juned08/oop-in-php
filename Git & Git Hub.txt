@@ -1,0 +1,31 @@
+Git : 
+	Git is version control system.What that really means is, Git helps us manage our project files. One of the primary things that git does and also the primary reason it exists is to keep track of the entire history of things that you are working on.
+	
+	This is especially helpful for software developers because when you are working on a project you first build a basic version of it and then try to improve it by adding new features (or) just experiment with things. This whole process of experimenting with new features is incredibly error prone and you might wanna revert back to your original code.
+	
+	It is command line interface.
+	
+Git Hub : 
+	Git hub is a hosting service.where our code get deployed on a centeralized location.we can revert changes.get deleted files.
+	
+CLI Codes : 
+
+1. git init   : Git it to make your folder as a git repository.It will add one hidden file .git in your folder.
+
+2. git status : It shows commited file,untracked files.status of you files in short.
+
+3. git add README.md -A: Add files to staging area.files we want to add in git repository.-A for all files 
+
+4. git commit -m "first commit" : Commit uses to add description about your changes that you are pushing on reporsitory.It is useful for backtracking.
+
+5. git remote add origin https://github.com/juned08/oop-in-php.git : Connect your reporsitory with your folder.provide url of you reporsitory for connection.
+
+6. git push origin master : Push your changes on your cloud based reporsitory.
+
+7. git clone reporsitory_name : To make copy/clone of your reporsitory in local folder.
+
+8. git pull origin master : Download file from reporsitory to you folder.
+
+Optional commands jusat to identifiy that which developer has worked on it : 
+git config --global user.email "junaidshaikh8882gmail.com"
+git config --global user.name "Juned Shaikh"

@@ -1,0 +1,88 @@
+OOP in PHP : To See Demo of these goto : http://localhost/oop/class_object.php
+
+1. Object :
+		when we want to access properties of class outside of the class then we have to use Object.
+		Ex 	  :  Apple, Banana, Grapes all are Object of Fruit class
+-------------------------------------------------------------------------------------------------------------------------------------------	
+2. Class  :
+		Class is a collection of member variables and member funcitons	
+
+		Ex 	  : Fruit is a clas which has name,rate as member variables and increase_rate() is member funciton.
+-------------------------------------------------------------------------------------------------------------------------------------------
+3. Constructor : 
+		Constructor in PHP is special type of function of a class which is automatically executed as any object of that class is created or instantiated.
+		Constructor is also called magic function because in PHP, magic method is start usually with two underscore characters.
+	
+	Ex   : __construct()
+-------------------------------------------------------------------------------------------------------------------------------------------
+4. Inheritance :	
+		When a class derives from another class.
+		When properties of one class is acquire/ used to another class is called Inheritance.
+		We cannot extend multiple clases in php to achive this we have to use interface.
+		An inherited class is defined by using the extends keyword.
+-------------------------------------------------------------------------------------------------------------------------------------------
+4. Encapsulation :	
+		Wrapping some data in single unit is called encapsulation.
+		Encapsulation is used to safe data / information in an object from other.it is mainly used for protection purpose.
+		
+	Access Specifiers :
+		1. Public  	 : Access by anyone
+		2. Private 	 : Access within that class.If we want to access that private member then we have to use getter and setter functions
+		3. Protected : Access by Class and class Derived from it.	
+-------------------------------------------------------------------------------------------------------------------------------------------
+4. Abstract Class :	
+		We can use abstract class when we want to write a method but we are only sure about the name of method and not the method logic then we declare that method as abstract and method body will be blank.
+		
+		An abstract clas is a class that has atleast one abstract method.
+		We cannot create object of abstract class. if we want to use it then we have to create a child class and overridding abstract method and from child class's object we can access abstract class methods.
+		We cannot extend multiple clases in php to achive this we have to use interface.
+		Ex : abstract public funciton sayHello();
+-------------------------------------------------------------------------------------------------------------------------------------------
+5. Interface :	
+		Interface is collection of abstract methods.
+		Interface contains method declaration only.we can not define function and variables in interface.
+		The difference between abstract and interface is that we can not define function and variables in interface unlike abstract class.
+		We have to use implement to use interface in a class not extends keyword.We cannot use private and protected access specifiers.
+		We cannot create object of interface.
+		
+		Ex : interface abc {
+				public function demo();
+			 }
+			 class test implements abc{
+			 }
+			 
+-------------------------------------------------------------------------------------------------------------------------------------------
+6. Static :
+		Static is special keyword.object is not used to access static members. it can be with "self::"  keyword inside that class.
+		Static members are related directly to class.unlike other members which is related through object.
+		
+		Ex: Public static abc();
+			If we want to calculate no of objects then we can use static members.
+-------------------------------------------------------------------------------------------------------------------------------------------
+7. Polymorphism : 
+			Polymorphism is achived by Interface or by abstract classes.
+			poly 		- Many
+			Morphirsm   - Forms
+			One thing for many purposes.
+			
+			Ex : Same Function name used for multiple Purposees.
+-------------------------------------------------------------------------------------------------------------------------------------------
+8. Function Overloading :
+					Same function name with different parameters.
+-------------------------------------------------------------------------------------------------------------------------------------------
+9. Function Overriding : 
+			It means when you define same function in child class which is already exist in parent class.
+			
+			Ex : You have one funcion in parent class and you rewrite it on child class with different logic.
+-------------------------------------------------------------------------------------------------------------------------------------------
+10. Trait :
+		It is Introduced in PHP 5.4.In PHP we cannot inherit more than one class.So to overcome this Traits has been introduced.
+		Ot is declared as "Trait" Keyword and to use it we have to add "use trait_name".
+		
+		Ex : Trait Sweets {}
+-------------------------------------------------------------------------------------------------------------------------------------------
+11. Namespaces :
+		Namespaces is avoid name conflict.by default over code uses global namespace.
+		It is used by "namespace" keyword.
+		
+		Ex : Suppose we are developing an account software,One developer working on manager module and anpther developer working on accountant module and both declared same class name "User" so there will be an error "redeclarimg class abc". sp tp solve this conflict namespace is used
