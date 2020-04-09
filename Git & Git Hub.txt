@@ -12,7 +12,7 @@ CLI Codes :
 
 1. git init   : Git it to make your folder as a git repository.It will add one hidden file .git in your folder.
 
-2. git status : It shows commited file,untracked files.status of you files in short.
+2. git status : It shows commited file,untracked files.(status of you files in short)
 
 3. git add README.md -A: Add files to staging area.files we want to add in git repository.-A for all files 
 
