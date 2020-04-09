@@ -4,10 +4,10 @@ Git :
 	This is especially helpful for software developers because when you are working on a project you first build a basic version of it and then try to improve it by adding new features (or) just experiment with things. This whole process of experimenting with new features is incredibly error prone and you might wanna revert back to your original code.
 	
 	It is command line interface.
-	
+--------------------------------------------------------------------------------------------------------------------------------------	
 Git Hub : 
 	Git hub is a hosting service.where our code get deployed on a centeralized location.we can revert changes.get deleted files.
-	
+--------------------------------------------------------------------------------------------------------------------------------------		
 CLI Codes : 
 
 1. git init   : Git it to make your folder as a git repository.It will add one hidden file .git in your folder.
@@ -25,7 +25,17 @@ CLI Codes :
 7. git clone reporsitory_name : To make copy/clone of your reporsitory in local folder.
 
 8. git pull origin master : Download file from reporsitory to you folder.
+--------------------------------------------------------------------------------------------------------------------------------------	
+Branches : Branches are more important when you want to keep your project working and newly came changes to be done in another copy of project.So that when changes done you can merge into your working project.
 
+1. git branch : list of branches and current branch will be marked as "*".
+
+2. git branch branch_name : TO create new branch.
+
+3. git checkout branch_to_go : If we want to switch to another branch.
+
+4. git merge branhname : When we want to merge with working project. ex: git checkout tempbranch
+--------------------------------------------------------------------------------------------------------------------------------------	
 Optional commands jusat to identifiy that which developer has worked on it : 
 git config --global user.email "junaidshaikh8882gmail.com"
 git config --global user.name "Juned Shaikh"
